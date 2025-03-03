@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TranMinhHieu20/nodejs_blog.git"
+  },
+  "keywords": [
+    "nodejs_blog"
+  ],
+  "author": "hieutm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TranMinhHieu20/nodejs_blog/issues"
+  },
+  "homepage": "https://github.com/TranMinhHieu20/nodejs_blog#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
