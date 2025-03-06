@@ -1,33 +1,37 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resourses/scss/ --output src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/TranMinhHieu20/nodejs_blog.git"
-  },
-  "keywords": [
-    "nodejs_blog"
-  ],
-  "author": "hieutm",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TranMinhHieu20/nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/TranMinhHieu20/nodejs_blog#readme",
-  "description": "",
-  "dependencies": {
-    "express": "^4.21.2",
-    "express-handlebars": "^8.0.1"
-  },
-  "devDependencies": {
-    "morgan": "^1.10.0",
-    "node-sass": "^9.0.0",
-    "nodemon": "^3.1.9"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resourses/scss/ --output src/public/css/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/TranMinhHieu20/nodejs_blog.git"
+    },
+    "keywords": [
+        "nodejs_blog"
+    ],
+    "author": "hieutm",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TranMinhHieu20/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/TranMinhHieu20/nodejs_blog#readme",
+    "description": "",
+    "dependencies": {
+        "express": "^4.21.2",
+        "express-handlebars": "^8.0.1",
+        "mongoose": "^8.12.1"
+    },
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.3",
+        "morgan": "^1.10.0",
+        "node-sass": "^9.0.0",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.5.3"
+    }
 }
