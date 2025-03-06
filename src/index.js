@@ -13,6 +13,13 @@ db.connect();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(
+    express.urlencoded({
+        extended: true,
+    }),
+);
+app.use(express.json());
+
 //http logger
 app.use(morgan('combined'));
 
