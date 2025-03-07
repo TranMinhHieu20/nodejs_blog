@@ -1,8 +1,5 @@
 const Course = require('../models/Course');
-const {
-    mutipleMongooseToObject,
-    mongooseToObject,
-} = require('../../util/mongoose');
+const { mutipleMongooseToObject, mongooseToObject } = require('../../util/mongoose');
 
 class CourseController {
     //[GET] /courses/:slug
@@ -54,6 +51,12 @@ class CourseController {
     update(req, res, next) {
         Course.updateOne({ _id: req.params.id }, req.body)
             .then(() => res.redirect('/me/stored/courses'))
+            .catch(next);
+    }
+    //[DELETE] /courses/:id
+    destroy(req, res, next) {
+        Course.deleteOne({ _id: req.params.id }, req.body)
+            .then(() => res.redirect('back'))
             .catch(next);
     }
 }
